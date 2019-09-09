@@ -1,10 +1,21 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-// This might need to be turned into a stateful (class-based) component
-const App = () => (
-  <div className='app'>
-    Ready to rock and roll
-  </div>
-)
+import BeerList from './BeerList'
 
-export default App
+
+const App = () => {
+  return (
+    <div className='app'>
+      <div >
+        <h1>Beersies</h1>
+      </div>
+      <BeerList />
+
+    </div>
+  )
+}
+  
+
+
+export default connect()(App)
