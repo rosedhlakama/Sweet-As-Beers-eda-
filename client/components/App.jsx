@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import BeerList from './BeerList'
+import Cart from './Cart'
 
 
 const App = () => {
@@ -9,8 +10,12 @@ const App = () => {
     <div className='app'>
       <div >
         <h1>Beersies</h1>
+        <BeerList />
       </div>
-      <BeerList />
+      
+
+      <h1>Cart</h1>
+      <Cart />
 
     </div>
   )

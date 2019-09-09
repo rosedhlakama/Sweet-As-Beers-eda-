@@ -3,3 +3,10 @@ export const actionCreatorName = () => {
     type: 'ACTION_TYPE'
   }
 }
+
+export const addBeer = (beer) => {
+  return{
+    type: 'ADD_BEER',
+    beer
+  }
+}
