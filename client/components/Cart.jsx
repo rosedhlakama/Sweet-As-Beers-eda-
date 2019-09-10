@@ -9,7 +9,7 @@ class Cart extends Component {
             <Fragment>
                 <p>Sweet As! Beersies in your cart are heresies!</p>
                 {this.props.cart.map(beer =>             
-                <li key={beer.id}>{beer}</li>
+                <li key={beer.id}>{beer.name}</li>
                 
             )}
             </Fragment>
